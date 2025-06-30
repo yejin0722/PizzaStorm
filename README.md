@@ -36,7 +36,7 @@
 ## 📦 프로젝트 폴더 구조
 
 
-  PizzaStorm 
+  PizzaStorm  
 ┣ 📂 css  
 ┣ 📂 images  
 ┣ 📂 js   

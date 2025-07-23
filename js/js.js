@@ -42,21 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
-/* 치즈멜팅 스크롤 */
-window.addEventListener('scroll', () => {
-  const cheeseWrap = document.querySelector('.cheese .cheese-wrap img');
-  const cheese = document.querySelector('.cheese');
-  const scrollTop = window.scrollY || window.pageYOffset;
-  const cheeseTop = cheese.getBoundingClientRect().top + scrollTop;
-  const windowHeight = window.innerHeight;
 
-  let progress = (scrollTop + windowHeight * 1.5 - cheeseTop) / (windowHeight + cheese.offsetHeight);
-  progress = Math.min(Math.max(progress, 0), 1);
-
-  const scaleYValue = 1 + 0.6 * progress;
-  cheeseWrap.style.transformOrigin = 'top center';
-  cheeseWrap.style.transform = `scaleY(${scaleYValue})`;
-});
 
 /* 이벤트 슬라이드 */
 var swiper = new Swiper(".mySwiper", {

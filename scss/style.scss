@@ -121,6 +121,10 @@ address{font-style: normal;}
 .wrap{
   background-color: rgb(213 24 17);
   overflow: hidden;
+  .inner-container {
+    max-width: 1700px;
+    margin: 0 auto;
+  }
   .pizza{position: relative;
     .deco-text{
       position: absolute;
@@ -288,7 +292,7 @@ address{font-style: normal;}
       .sauce-tomato02{
         z-index: -1;
         top: 1%;
-        right: 31.5%;
+        right: 590px;
         position: absolute;
         .sauce-tomato02-wrap{
           position: relative;
@@ -307,33 +311,34 @@ address{font-style: normal;}
         }
       }
       .sauce-tomato03{
-        bottom: -5%;
+        bottom: -40px;
         position: absolute;
       }
       .sauce-spoon{
         position: absolute;
-        bottom: 5%;
+        bottom: 100px;
         right: 0;
       }
       .sauce-text{
         .sauce-text-wrap{
-          position: relative;
           .sauce-text01{
-            top: 120px;
-            left: 7.5%;
+            top: 200px;
+            left: 150px;
             position: absolute;
           }
           .sauce-text02{
+            bottom: 180px;
+            right: 130px;
             position: absolute;
-            right: 8%;
-            top: 450px;
           }
         }
       }
       .sauce-object{
         .sauce-object-wrap{
+          width: 1300px;
           top: 380px;
-          left: 15%;
+          left: 50%;
+          transform: translateX(-50%);
           position: relative;
           .sauce-object-shadow{
             position: absolute;
@@ -384,7 +389,7 @@ address{font-style: normal;}
         top: -360px;
         left: 0;
         width: 100%;
-        height: 360px;
+        height: 365px;
         background: url(../images/mainmenu_deco01.png);
         background-size: 100% 600px;
         background-repeat: no-repeat;
@@ -469,8 +474,10 @@ address{font-style: normal;}
         position: absolute;
         top: 0;
         left: 50%;
-        width: auto;
-        height: auto;
+        width: 100%;
+        height: 700px;
+        background: url(../images/mainmenu_deco02.png) no-repeat center;
+        background-size: cover;
         transform: translateX(-50%);
         img {
           display: block;
@@ -514,6 +521,9 @@ address{font-style: normal;}
     }
     .event-deco{
       transform: translateY(50%);
+      width: 100%;
+      height: 148px;
+      background: url(../images/event_deco.png);
     }
   }
   .store{
